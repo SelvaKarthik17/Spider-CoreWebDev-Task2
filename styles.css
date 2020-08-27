@@ -1,0 +1,289 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#main {
+    
+
+    position: absolute;
+	top:30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+  background: #FFFFFF;
+    height: 400px;
+  width:600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+}
+
+#startpage {
+    
+    position: absolute;
+	top:30%;
+	left: 0;
+	right: 0;  	
+	margin: auto;
+  background: #FFFFFF;
+    height: 400px;
+  width:600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+        
+}
+
+#scorecard {
+    
+        position: absolute;
+	top:30%;
+	left: 0;
+	right: 0;  	
+	margin: auto;
+  background: #FFFFFF;
+    height: 400px;
+  width:600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+           
+}
+
+
+
+
+
+#start {
+        
+    position: absolute;
+    top:46%;
+    left:43%;
+    width: 100px;
+    height: 40px;
+    font-size: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+
+    overflow: hidden;
+    outline:none;
+        
+    
+}
+
+#sc{
+    
+    position: absolute;
+    top:25%;
+    left:30%;
+    width: 300px;
+    height: 40px;
+    font-size: 35px;
+}
+
+
+
+
+#retry {
+    
+    position: absolute;
+    top:46%;
+    left:30%;
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
+        
+    
+}
+
+
+
+#options{
+    
+    
+    position: absolute;
+    left:35%;
+    top:30%;
+}
+
+#btn {
+    
+    position: absolute;
+    left:43%;
+    bottom:25%;
+    font-family: "Roboto", sans-serif;
+    width:100px;
+    height: 25px;
+    font: 14px;
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color: darkgoldenrod;
+    border: 0px;
+    
+    
+    
+}
+
+#ress {
+    
+    position: absolute;
+    left:43%;
+    bottom:17%;
+    font-family: "Roboto", sans-serif;
+    width:100px;
+    height: 25px;
+    font: 14px;
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color: darkgoldenrod;
+    border: 0px;
+    
+            
+}
+
+#previous{
+    
+    position: absolute;
+    bottom:10%;
+    left:10%;
+    width: 100px;
+    height: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#next{
+    position: absolute;
+    bottom:10%;
+    right:10%;
+        width: 100px;
+    height: 40px;
+    
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+
+body {
+  background: #FFE4B5; /* fallback for old browsers */
+
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.opt {
+	clear: both;
+	margin: 0 0px;
+}
+
+label {
+    margin-top: 0;
+
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+    margin-top: 0;
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+    margin-top: 0;
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+    margin-top: 0;
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+    
+    margin-top: 0;
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    margin-top: 0;
+	content:'\2714';
+	text-indent: .9em;
+	color: #FFFFFF;
+	background-color: #28AEF5;
+}
+
+input.radio:checked ~ label {
+    margin-top: 0;
+	color: #777;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+    margin-top: 0;
+	box-shadow: 0 0 0 3px #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

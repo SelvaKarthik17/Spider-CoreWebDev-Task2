@@ -1,68 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    
-    
-    
-    <body id="wrapper">
-        
-        <div id="startpage">
-                <button id="start">Start</button>
-        </div>
-        
-     <div id="main" >
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('navtitle').innerHTML = null;
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+            document.getElementById('navtitle').innerHTML = "Questions";
+        }
+    </script>
+
+
+
+</head>
+
+
+
+<body id="wrapper">
+
+
+    <div id="timer">
+        <span id="time">100</span>
+    </div>
+
+
+
+    <span class="slide">
+        <a id="navtitle" onclick="openSlideMenu()">
+            Questions
+        </a>
+    </span>
+
+
+    <div id="menu" class="nav">
+        <a class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a class="qn">Question 1</a>
+        <a class="qn">Question 2</a>
+        <a class="qn">Question 3</a>
+        <a class="qn">Question 4</a>
+        <a class="qn">Question 5</a>
+        <a class="qn">Question 6</a>
+        <a class="qn">Question 7</a>
+        <a class="qn">Question 8</a>
+        <a class="qn">Question 9</a>
+        <a class="qn">Question 10</a>
+
+    </div>
+
+
+    <div id="startpage">
+        <button id="start">Start</button>
+    </div>
+
+    <div id="username">
+        <input type="text" id="un" placeholder="Type username here" required>
+        <input type="button" id="namebtn" value="Submit Name">
+    </div>
+
+    <div id="main">
         <div id="content">
-            
-          <span id="sn">Q1</span>  <span id="question">The ongoing Covid-19 pandemic is caused by </span>
-                
-                <form id="options">
-                    <div class="opt"><input type="radio" name="choice" id="radio1" value="a" class="radio" required hidden><label id="a"for="radio1">SARS-Cov</label></div>
-                   <div class="opt"> <input type="radio" name="choice" id="radio2" value="b" class="radio" hidden><label id="b" for="radio2">MERS-CoV</label> </div>
-                   <div class="opt"> <input type="radio" name="choice" id="radio3" value="c" class="radio" hidden><label id="c"for="radio3">SARS-Cov2</label> </div>
-                    <div class="opt"> <input type="radio" name="choice" id="radio4" value="d" class="radio" hidden> <label id="d" for="radio4">ZEBOV</label> </div>
-                    
-                </form>
-                   <input type="button" id="btn" value="submit">
+
+            <span id="sn"></span> <span id="question"> </span>
+
+            <form id="options">
+                <div class="opt"><input type="radio" name="choice" id="radio1" value="a" class="radio" required hidden><label id="a" for="radio1"></label></div>
+                <div class="opt"> <input type="radio" name="choice" id="radio2" value="b" class="radio" hidden><label id="b" for="radio2"></label> </div>
+                <div class="opt"> <input type="radio" name="choice" id="radio3" value="c" class="radio" hidden><label id="c" for="radio3"></label> </div>
+                <div class="opt"> <input type="radio" name="choice" id="radio4" value="d" class="radio" hidden> <label id="d" for="radio4"></label> </div>
+
+            </form>
+            <input type="button" id="btn" value="submit">
         </div>
-        
+
         <div id="navi">
-        
+
             <form id="nav">
                 <input type="button" id="previous" value="Previous">
                 <input type="button" id="next" value="Next">
                 <input type="button" id="ress" value="Show Score">
-                            
+
             </form>
-        
+
         </div>
     </div>
-        
-        <div id="scorecard" >
-            <p id="sc"></p>
-            <input type="button" id="retry" value="try again">
-        </div>
-        
-    
 
-        <script type="text/javascript" src="script.js"> </script>
-    </body>
+    <div id="scorecard">
+        <p id="sc"></p>
+        <p id="hss"></p>
+        <p id="hsn"></p>
+        <p id="hst"></p>
+        <input type="button" id="retry" value="try again">
+    </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
+    <script type="text/javascript" src="script.js"> </script>
+</body>
 
 
 

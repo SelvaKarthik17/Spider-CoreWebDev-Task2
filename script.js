@@ -435,7 +435,7 @@ start.onclick = function () {
         document.getElementById("scorecard").style.visibility = "visible";
 
         var scorecard = document.getElementById("sc");
-        scorecard.innerHTML = "Your Score: " + score;
+        scorecard.innerHTML = name+"\'s "+"Score: " + score;
 
 
     }
